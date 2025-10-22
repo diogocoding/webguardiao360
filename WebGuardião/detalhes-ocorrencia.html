@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Detalhes da Ocorrência</title>
+
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="detalhes.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img
+            src="https://i.postimg.cc/28YgB6z9/Gemini-Generated-Image-tr1uhatr1uhatr1u-8.png"
+            alt="Logo"
+            class="logo"
+          />
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="telaprincipalocorrencias.html" class="active">
+                <i class="fa-solid fa-house"></i> <span>Ocorrências</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard-operacional.html">
+                <i class="fa-solid fa-chart-line"></i> <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="relatorios.html">
+                <i class="fa-solid fa-file-lines"></i> <span>Relatórios</span>
+              </a>
+            </li>
+            <li>
+              <a href="gestao-usuarios.html">
+                <i class="fa-solid fa-users"></i> <span>Usuários</span>
+              </a>
+            </li>
+            <li>
+              <a href="auditoria.html">
+                <i class="fa-solid fa-magnifying-glass"></i> <span>Auditoria</span>
+              </a>
+            </li>
+            <li>
+              <a href="ajustes.html">
+                <i class="fa-solid fa-gear"></i> <span>Ajustes</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <a href="login.html">
+            <i class="fa-solid fa-right-from-bracket"></i> <span>Sair</span>
+          </a>
+        </div>
+      </aside>
+      <main class="main-content">
+        <header class="main-header details-header">
+          <div class="header-title-group">
+            <h1>Detalhes da Ocorrência</h1>
+            <h2 class="occurrence-id">#2023-1254</h2>
+          </div>
+          <div class="header-actions">
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-pen-to-square"></i> Atualizar Status
+            </button>
+            <div class="user-profile">
+              <i class="fa-solid fa-bell"></i>
+              <span class="user-greet">Olá, Admin</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="details-grid">
+          <div class="details-col-left">
+            <div class="info-card info-principal">
+              <h3>Informações Principais</h3>
+              <div class="info-grid">
+                <div class="info-item">
+                  <span class="info-label">Tipo:</span>
+                  <span class="info-value">Incêndio Estrutural</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Status:</span>
+                  <span class="info-value"
+                    ><span class="status-dot status-atendimento"></span> Em
+                    Atendimento</span
+                  >
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Status:</span>
+                  <span class="info-value"
+                    ><span class="status-dot status-atendimento"></span> Em
+                    Atendimento</span
+                  >
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Zona:</span>
+                  <span class="info-value">Central</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Prioridade:</span>
+                  <span class="info-value">Alta</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Data/Hora:</span>
+                  <span class="info-value">15/05/2023 10:30</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Solicitante:</span>
+                  <span class="info-value">Maria Silva</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Solicitante:</span>
+                  <span class="info-value">Maria Silva</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card card-localizacao">
+              <div class="card-header">
+                <h3>Localização</h3>
+                <i class="fa-solid fa-arrows-rotate refresh-icon"></i>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.3603071803923!2d-34.88245778921003!3d-8.064681991929543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18b991a6d277%3A0xda5638ae78a7fbdc!2sR.%20das%20Fl%C3%B4res%20-%20Santo%20Ant%C3%B4nio%2C%20Recife%20-%20PE%2C%2052021-210!5e0!3m2!1sen!2sbr!4v1761126336330!5m2!1sen!2sbr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <p class="address">
+                Rua das Flores, 123, Santo Antônio<br />
+              </p>
+              <button class="btn btn-secondary">
+                <i class="fa-solid fa-file-lines"></i> Gerar Relatório Parcial
+              </button>
+            </div>
+          </div>
+
+          <div class="details-col-right">
+            <div class="info-card">
+              <h3>Mídias e Anexos</h3>
+              <div class="media-grid">
+                <a href="#" class="media-item">
+                  <img
+                    src="https://i.postimg.cc/sDmtrrp1/image-4.png"
+                    alt="Foto do local"
+                    class="media-thumbnail"
+                  />
+                  <span>foto_do_local.jpg</span>
+                </a>
+                <a href="#" class="media-item">
+                  <img
+                    src="https://i.postimg.cc/fbySMmkG/videodolocal.png"
+                    alt="Vídeo ocorrência"
+                    class="media-thumbnail"
+                  />
+                  <span>video_ocorrencia.mp4</span>
+                </a>
+                <a href="#" class="media-item">
+                  <i class="fa-solid fa-file-audio media-icon"></i>
+                  <span>chamada_193.mp3</span>
+                </a>
+                <a href="#" class="media-item">
+                  <i class="fa-solid fa-file-pdf media-icon"></i>
+                  <span>relatorio_inicial.pdf</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <h3>Timeline/Histórico de Ações</h3>
+              <ul class="timeline-list">
+                <li><strong>10:32:</strong> Chamado recebido e registrado.</li>
+                <li><strong>11:45:</strong> Equipe despachada (VTR 123)</li>
+                <li><strong>12:00:</strong> Em rescaldo e avaliação.</li>
+                <li><strong>14:36:</strong> Incêndio Controlado</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div> 
+      </main>
+    </div>
+  </body>
+</html>
